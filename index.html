@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5d37a" />
+  <title>The Family Room</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="appShell">
+    <header class="topBar">
+      <div>
+        <p class="eyebrow">private family house</p>
+        <h1>The Family Room</h1>
+      </div>
+      <button class="iconBtn" id="notifyBtn" aria-label="Notifications">🔔</button>
+    </header>
+
+    <nav id="familyQuickNav" class="familyQuickNav" aria-label="Family profile navigation"></nav>
+
+    <main id="app" class="content"></main>
+
+    <nav class="bottomNav" aria-label="Room navigation">
+      <button data-room="home" class="active">🏠<span>Room</span></button>
+      <button data-room="kitchen">🍳<span>Kitchen</span></button>
+      <button data-room="backyard">🌳<span>Yard</span></button>
+      <button data-room="hallway">🖼️<span>Hall</span></button>
+      <button data-room="more">✨<span>More</span></button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
